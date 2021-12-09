@@ -1,0 +1,516 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* Custom */
+
+:root {
+    --primary: #E9573C;
+    --secondary: #232D38;
+    --bg: rgb(42,52,63, 0.7);
+    --txt: #b3b3b3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: var(--secondary);
+    line-height: 1.8;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+strong {
+    font-weight: 800;
+
+}
+small {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.color {
+    color: var(--primary);
+}
+
+
+
+/* Spaces */
+
+
+.spaceall {
+    padding: 32px;
+}
+
+.space10 {
+    padding: 10px 0;
+}
+.space20 {
+    padding: 20px 0;
+}
+.space40 {
+    padding: 40px 0;
+}
+.space60 {
+    padding: 60px 0;
+}
+.space80 {
+    padding: 80px 0;
+}
+
+
+
+/* Type */
+
+.center {
+    text-align: center;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+p{
+    font-size: 12px;
+    color: var(--txt);
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+
+section {
+    /* border: 1px solid black; */
+}
+
+/* Flex */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-stretch {
+    align-self: stretch;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-left {
+    justify-content: flex-start;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+/* .flex10 {
+    flex: 0 1 5%;
+} */
+
+.flex25 {
+    flex: 0 1 23%;
+}
+
+.flex30 {
+    flex: 0 1 30%;
+}
+
+.flex33 {
+    flex: 0 1 31%;
+}
+
+.flex48 {
+    flex: 0 1 48%;
+}
+
+.flex65 {
+    flex: 0 1 63%;
+}
+
+.flex50 {
+    flex: 0 1 50%;
+}
+
+.flex75 {
+    flex: 0 1 75%;
+}
+
+/* .flex90 {
+    flex: 0 1 95%;
+} */
+
+
+
+
+/* width */
+
+.width100 {
+    width: 100%;
+}
+
+
+
+/* button */
+
+.btn {
+    display: inline-block;
+    font-size: 12px;
+    padding: 6px 12px;
+}
+.btn0 {
+    color: var(--primary);
+    text-transform: uppercase;
+    padding: 0 !important;
+    font-size: 10px;
+    padding: 0;
+    font-weight: 600;
+}
+.btn0:hover {
+    text-decoration: underline;
+}
+
+.btn1 {
+    background-color: var(--primary);
+    font-weight: 200 !important;
+    color: white !important;
+    text-transform: uppercase;
+}
+.btn1:hover, .btn2:hover {
+    background-color: rgba(237, 85, 58, 0.7);
+    color: white !important;
+}
+
+.btn2 {
+    color: white;
+    background-color: var(--primary);
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-transform: capitalize !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+/* Line Decoration */
+.line {
+    display: inline-block;
+    padding: 6px 0;
+}
+.line img {
+    width: 80%;
+}
+
+/* Header */
+.header {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header a {
+    text-transform: uppercase;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.header .menu a {
+    margin-left: 32px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.menu a.active, .menu a:hover {
+    color: var(--primary);
+}
+
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    color: white;
+}
+
+.banner video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.banner .overlay {
+    background: var(--bg);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+.banner h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+
+
+/* choose program  */
+
+.heading p{
+    font-size: 11px;
+}
+.heading, .program .txt {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+
+.program .icon {
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.program .icon img {
+    width: 90%;
+}
+
+.program article {
+    margin-bottom: 32px;
+}
+
+
+/* Begin */
+
+.begin {
+    background: url(../media/cta-bg.jpg);
+}
+
+.begin p {
+    font-size: 12px;
+}
+
+.begin h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+
+.begin .container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Classes */
+
+.classes .menu a {
+    font-size: 14px;
+    color: var(--secondary);
+    font-weight: 700;
+}
+.classes .menu li {
+    padding: 20px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 28px;
+}
+.classes .icon img{
+    /* color: var(--primary);
+    font-size: 26px; */
+    margin-right: 8px;
+    width: 55%;
+    vertical-align: middle;
+}
+.article p {
+    font-size: 10px;
+}
+/* Schedules */
+
+.schedules {
+    background: url(../media/schedule-bg.jpg);
+}
+.schedules h2 {
+    color: white;
+}
+
+.schedules .menu li,.schedules .menu span {
+    color: white;
+    font-size: 12px;
+}
+.schedules .menu a{
+    color: var(--txt);
+}
+.schedules .menu a.active,.schedules .menu a:hover {
+    color: var(--primary);
+}
+
+table td {
+    color: var(--txt);
+    font-size: 12px;
+    padding: 28px 40px;
+    border: 1px solid var(--txt);
+}
+
+
+/* Expert Trainer */
+
+.trainer .article span {
+    font-size: 10px;
+}
+
+.trainer .article {
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
+}
+
+.trainer .social i{
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.trainer .social i:hover {
+    color: var(--primary);
+}
+
+
+/* Form */
+.map {
+    font-size: 0;
+}
+
+.form {
+    background: url(../media/contact-bg.jpg);
+    align-self: stretch;
+    padding: 60px;
+}
+
+fieldset {
+    background-color: white;
+    padding: 32px;
+    border-radius: 4px;
+}
+.form-box {
+    padding: 6px;
+    margin-bottom: 24px;
+    width: 100%;
+    outline: 0;
+    border: 1px solid var(--txt);
+}
+.form-box:focus {
+    border: 1px solid;
+    border-image: linear-gradient(to right, var(--secondary), var(--primary)) 5;
+}
+.form-box::placeholder {
+    font-size: 10px;
+    color: var(--txt);
+    font-family: 'Poppins', sans-serif;
+}
+.form .btn {
+    border: 0;
+    box-shadow: 0;
+    outline: 0;
+    font-size: 10px;
+    padding: 10px 14px;
+    margin-top: 12px;
+}
+.form textarea {
+    margin-bottom: 0;    
+}
+
+.form-map {
+    margin-top: 60px;
+}
